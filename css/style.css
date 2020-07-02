@@ -432,15 +432,16 @@ a:hover,a:focus {
 		padding: 0px 10px;
 	}
 }
-
-
-.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img, .side-image {
     height: 100%;
     max-width: none;
 	width: 100%;
 	object-fit: cover;
 }
 
+/* .side-image {
+margin-top: -80px;
+} */
 
 /* Press */
 
@@ -535,7 +536,7 @@ footer p {
 
 button { 
 	border: 2px solid #222;
-	background: #fdfdfd;
+	background: #fff;
 	color: #222;
 	border-radius: 4px;
 	font-weight: 600;
@@ -550,7 +551,7 @@ button {
 	cursor: pointer;
 	transition: 0.3s;
 }
-button:hover {border: 2px solid #222; background: #222; color:#fdfdff; transition: 0.3s;}
+button:hover {border: 2px solid #222; background: #222; color:#fff; transition: 0.3s;}
 
 
 @media only screen and (min-width: 768px) {

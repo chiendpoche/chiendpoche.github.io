@@ -63,43 +63,25 @@
 .table-cell.cell-feature {
 	text-align: left;
 	font-size: 18px;
-
-
+	font-weight: 400;
 }
 
-.table-cell.platform {
-	color: limegreen;
+.cell-subtitle {
+	text-transform: uppercase;
 }
 
-.table-cell.platform a.btn {
-	color: limegreen;
-}
-
-.table-cell.platform a.btn:hover {
-	background-color: limegreen;
-	border-color: limegreen;
-	color: white;
-}
-
-.table-cell.enterprise {
-	background-color: #30305b;
-	color: #85bafc;
-}
-
-.table-cell.enterprise a.btn {
-	color: #85bafc;
-}
-
-.table-cell.enterprise a.btn:hover {
-	background-color: #85bafc;
-	border-color: #85bafc;
-	color: #30305b;
+.cell-divider {
+	padding: 1.2em 1.2em 0.8em 1.2em;
 }
 
 /* Table columns
 ================================== */
 .table-cell {
-	width: calc(33.33% - 1px);
+	width: calc(20% - 1px);
+}
+
+.cell-feature {
+	width: calc(40% - 1px);
 }
 
 @media only screen and (max-width: 768px) {
@@ -109,11 +91,8 @@
 	}
 }
 
-svg.enterprise-check path {
-	fill: #30305b !important;
-}
 
-a.btn {
+/* a.btn {
 	border: 2px solid;
 	padding: .6rem .9rem .6rem .9rem;
 	font-weight: 400;
@@ -127,5 +106,5 @@ a.btn {
 	-webkit-border-radius: 0.3rem;
 	-moz-border-radius: 0.3rem;
 	-ms-border-radius: 0.3rem;
+	border-radius: 0.3rem; */
 }
-	border-radius: 0.3rem;
