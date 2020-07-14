@@ -12,9 +12,8 @@
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="./css/functions.css" rel="stylesheet">
   <link href="./css/style-tweaks.css" rel="stylesheet">
+
 
 </head>
 
@@ -35,7 +34,7 @@
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./a-propos.html">À propos</a>
+          <a class="nav-link" href="./a-propos.html">À&nbsp;propos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -63,21 +62,18 @@
     
     
     <div class="carousel-inner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active" style="background-image: url('./img/oeuvres/artwork--LBSJ--Vertigo-2019-oil-on-wood-22x30in--2000pxw.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="bold">Vertigo</h2>
           <p class="lead">Huile sur panneau de bois, 22&nbsp;x 30&nbsp;po</p>
         </div>
       </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('./img/oeuvres/artwork--LBSJ--Harricana--2019-huile-sur-bois-22x30po--2000pxw.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="bold">Harricana</h2>
           <p class="lead">Huile sur panneau de bois, 22&nbsp;x 30&nbsp;po</p>
         </div>
       </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('./img/oeuvres/artwork--LBSJ--Eclatement--2018-oil-on-paper-16x20in.jpg')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="bold">Éclatement</h2>
@@ -85,21 +81,32 @@
         </div>
       </div>
     </div>
-
+  
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <i style="font-size: 32px;" class="fa fa-angle-left"></i>
+        <span class="sr-only">Previous</span>
+      </a>
+
     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <i style="font-size: 32px" class="fa fa-angle-right"></i>
+        <span class="sr-only">Next</span>
+      </a>
+
+  
+
   </div>
 </header>
 
-<!-- Bootstrap core JavaScript -->
+<!-- Bootstrap Core Javascript -->
+
+<!-- MOVE JQUERY SCRIPT UP ABOVE BOOTSTRAP TO RESTART CAROUSEL -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Ver.4.7.0 -->
+<script src="https://use.fontawesome.com/4f1490b653.js"></script>
+
 </body>
 
 </html>
