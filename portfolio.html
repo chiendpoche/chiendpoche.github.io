@@ -13,21 +13,6 @@
 </head>
 
 <style>
-
-.modal { background-color: #fff; }
-
-.modal-content {
-  background-color: rgba(255,255,255,0);
-  padding: 0; border: 0;
-}
-.modal-header { padding: 5px; border: 0; }
-.modal-body, .modal-footer { padding: 0; border: 0; }
-
-/* .modal-content-fullscreen {
-  height: 99% !important;
-  min-height: 99% !important;
-  max-height: 99% !important;
-} */
 </style>
 
 
@@ -69,27 +54,40 @@
 <div class="container">
   <hr class="my-5" style="border:0;">
   <h1 class="text-center text-lg-left my-5" style="border:0;">Portfolio</h1>
-  <hr class="mt-2 mb-5" style="visibility: hidden;">
+  <!-- <hr class="mt-2 mb-5" style="visibility: hidden;"> -->
 
 <!-- Gallery -->
 
     <!--  Gallery is linked to lightbox using data attributes.
-    To open lightbox, this is added to the gallery element: {data-toggle="modal" data-target="#exampleModal"}.
-    To open carousel on correct image, this is added to each image element: {data-target="#carouselExample" data-slide-to="0"}.
+    To open lightbox, this is added to the gallery element: {data-toggle="modal" data-target="#portfolioModal"}.
+    To open carousel on correct image, this is added to each image element: {data-target="#Portfolio-Carousel" data-slide-to="0"}.
     Replace '0' with corresponding slide number.  -->
 
-    <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-      <div class="col-12 col-sm-6 col-lg-3">
-        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Lac-Joly--2019-oil-on-wood-22x30in--2000pxw.jpg" alt="First slide" data-target="#carouselExample" data-slide-to="0">
+    <div class="row" id="gallery" data-toggle="modal" data-target="#portfolioModal">
+      <div class="py-1 col-6 col-sm-3 col-lg-3">
+        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Lac-Joly--2019-oil-on-wood-22x30in.jpg" alt="First slide" data-target="#Portfolio-Carousel" data-slide-to="0">
       </div>
-      <div class="col-12 col-sm-6 col-lg-3">
-        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Makes-Me-Wonder--1500px.jpg" alt="Second slide" data-target="#carouselExample" data-slide-to="1">
+      <div class="py-1 col-6 col-sm-3 col-lg-3">
+        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Makes-Me-Wonder.jpg" alt="Second slide" data-target="#Portfolio-Carousel" data-slide-to="1">
       </div>
-      <div class="col-12 col-sm-6 col-lg-3">
-        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Eclatement--2018-oil-on-paper-16x20in.jpg" alt="Third slide" data-target="#carouselExample" data-slide-to="2">
+      <div class="py-1 col-6 col-sm-3 col-lg-3">
+        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Eclatement--2018-oil-on-paper-16x20in.jpg" alt="Third slide" data-target="#Portfolio-Carousel" data-slide-to="2">
       </div>
-      <div class="col-12 col-sm-6 col-lg-3">
-        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Harricana--2019-huile-sur-bois-22x30po--2000pxw.jpg" alt="Fourth slide" data-target="#carouselExample" data-slide-to="3">
+      <div class="py-1 col-6 col-sm-3 col-lg-3">
+        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Harricana--2019-huile-sur-bois-22x30po.jpg" alt="Fourth slide" data-target="#Portfolio-Carousel" data-slide-to="3">
+      </div>
+
+      <div class="py-1 col-6 col-sm-3 col-lg-3">
+        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Les-Caps--2019-oil-on-wood-30x40in.jpg" alt="Fourth slide" data-target="#Portfolio-Carousel" data-slide-to="4">
+      </div>
+      <div class="py-1 col-6 col-sm-3 col-lg-3">
+        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--De-Bleury--2019-oil-on-wood-16x20in.jpg" alt="Fourth slide" data-target="#Portfolio-Carousel" data-slide-to="5">
+      </div>
+      <div class="py-1 col-6 col-sm-3 col-lg-3">
+        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--My-Past-My-Present-My-Future-My-Life--Louis-Bernard-St-Jean-2018-oil-on-canvas-24x30in.jpg" alt="Fourth slide" data-target="#Portfolio-Carousel" data-slide-to="6">
+      </div>
+      <div class="py-1 col-6 col-sm-3 col-lg-3">
+        <img class="w-100" src="./img/oeuvres/artwork--LBSJ--Vertigo-2019-oil-on-wood-22x30in.jpg" alt="Fourth slide" data-target="#Portfolio-Carousel" data-slide-to="7">
       </div>
     </div>
 
@@ -99,7 +97,7 @@
     
 
 </div>
-<div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade modal-fullscreen" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">  
       <div class="modal-header">
@@ -109,56 +107,93 @@
       </div>
 
       <div class="modal-body">
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div id="Portfolio-Carousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExample" data-slide-to="1"></li>
-            <li data-target="#carouselExample" data-slide-to="2"></li>
-            <li data-target="#carouselExample" data-slide-to="3"></li>
+            <li data-target="#Portfolio-Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#Portfolio-Carousel" data-slide-to="1"></li>
+            <li data-target="#Portfolio-Carousel" data-slide-to="2"></li>
+            <li data-target="#Portfolio-Carousel" data-slide-to="3"></li>
+            <li data-target="#Portfolio-Carousel" data-slide-to="4"></li>
+            <li data-target="#Portfolio-Carousel" data-slide-to="5"></li>
+            <li data-target="#Portfolio-Carousel" data-slide-to="6"></li>
+            <li data-target="#Portfolio-Carousel" data-slide-to="7"></li>
           </ol>
           
           
           <div class="carousel-inner">
-            <div class="carousel-item lightbox active">
-              <img class="d-block h-85 mx-auto" src="./img/oeuvres/artwork--LBSJ--Lac-Joly--2019-oil-on-wood-22x30in--2000pxw.jpg" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <p class=""><strong>Lac Joly&ensp;&ndash;&ensp;</strong>Huile sur panneau de bois, 22&nbsp;x 30&nbsp;po</p>
+            <div class="carousel-item lightbox active" style="background-image: url('./img/oeuvres/artwork--LBSJ--Lac-Joly--2019-oil-on-wood-22x30in.jpg')">
+              <div class="carousel-caption d-block d-md-block">
+                <p class=""><strong>Lac Joly&ensp;&ndash;&ensp;</strong>Huile sur panneau de bois, 22&nbsp;x 30&nbsp;po</p>
+              </div>
+            </div>
+            
+            
+              <div class="carousel-item lightbox" style="background-image: url('./img/oeuvres/artwork--LBSJ--Makes-Me-Wonder.jpg')" alt="Second slide">
+                <div class="carousel-caption d-block d-md-block">
+                  <p class=""><strong>Makes Me Wonder&ensp;&ndash;&ensp;</strong>Huile sur bois, 48&nbsp;x&nbsp;60&nbsp;po&nbsp;&nbsp;&#128308;</p>
+                </div>
+              </div>
+
+            
+              <div class="carousel-item lightbox" style="background-image: url('./img/oeuvres/artwork--LBSJ--Eclatement--2018-oil-on-paper-16x20in.jpg')" alt="Third slide">
+                <div class="carousel-caption d-block d-md-block">
+                  <p class=""><strong>Éclatement&ensp;&ndash;&ensp;</strong>Huile sur papier Arches, 16&nbsp;x 20&nbsp;po &emsp;&#128308;</p>
+                </div>
+              </div>
+
+              <div class="carousel-item lightbox" style="background-image: url('./img/oeuvres/artwork--LBSJ--Harricana--2019-huile-sur-bois-22x30po.jpg')" alt="Fourth slide">
+              <div class="carousel-caption d-block d-md-block">
+                <p class=""><strong>Harricana&ensp;&ndash;&ensp;</strong>Huile sur panneau de bois, 22&nbsp;x 30&nbsp;po &emsp;&#128308;</p>
+              </div>
+            </div>
+
+              <div class="carousel-item lightbox" style="background-image: url('./img/oeuvres/artwork--LBSJ--Les-Caps--2019-oil-on-wood-30x40in.jpg')" alt="Fifth slide">
+              <div class="carousel-caption d-block d-md-block">
+                <p class=""><strong>Les Caps&ensp;&ndash;&ensp;</strong>Huile sur panneau de bois, 30&nbsp;x 40&nbsp;po</p>
+              </div>
+            </div>
+           
+              <div class="carousel-item lightbox" style="background-image: url('./img/oeuvres/artwork--LBSJ--De-Bleury--2019-oil-on-wood-16x20in.jpg')" alt="Sixth slide">
+              <div class="carousel-caption d-block d-md-block">
+                <p class=""><strong>De Bleury&ensp;&ndash;&ensp;</strong>Huile sur panneau de bois, 16&nbsp;x 20&nbsp;po &emsp;&#128308;</p>
+              </div>
+            </div>
+           
+              <div class="carousel-item lightbox" style="background-image: url('./img/oeuvres/artwork--LBSJ--My-Past-My-Present-My-Future-My-Life--Louis-Bernard-St-Jean-2018-oil-on-canvas-24x30in.jpg')" alt="Seventh slide">
+              <div class="carousel-caption d-block d-md-block">
+                <p class=""><strong>My Past My Present My Future My life&ensp;&ndash;&ensp;</strong>Huile sur toile, 24&nbsp;x 30&nbsp;po</p>
+               </div>
+            </div>
+          
+              <div class="carousel-item lightbox" style="background-image: url('./img/oeuvres/artwork--LBSJ--Vertigo-2019-oil-on-wood-22x30in.jpg')" alt="Eight slide">
+                <div class="carousel-caption d-block d-md-block">
+                  <p class=""><strong>Vertigo&ensp;&ndash;&ensp;</strong>Huile sur panneau de bois, 22&nbsp;x 30&nbsp;po &emsp;&#128308;</p>
                 </div>
             </div>
-            <div class="carousel-item lightbox">
-              <img class="d-block px-auto h-85 mx-auto" src="./img/oeuvres/artwork--LBSJ--Makes-Me-Wonder--1500px.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <p class=""><strong>Vertigo&ensp;&ndash;&ensp;</strong>Huile sur panneau de bois, 22&nbsp;x 30&nbsp;po</p>
-                </div>
-            </div>
-            <div class="carousel-item lightbox">
-              <img class="d-block h-85 mx-auto" src="./img/oeuvres/artwork--LBSJ--Eclatement--2018-oil-on-paper-16x20in.jpg" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                  <p class=""><strong>Éclatement&ensp;&ndash;&ensp;</strong>Huile sur papier Arches, 16&nbsp;x 20&nbsp;po</p>
-                </div>
-            </div>
-            <div class="carousel-item lightbox">
-              <img class="d-block h-85 mx-auto" src="./img/oeuvres/artwork--LBSJ--Harricana--2019-huile-sur-bois-22x30po--2000pxw.jpg" alt="Fourth slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <p class=""><strong>Harricana&ensp;&ndash;&ensp;</strong>Huile sur panneau de bois, 22&nbsp;x 30&nbsp;po</p>
-                </div>
-            </div>
+
           </div>
           
-          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+
+
+
+          <a class="carousel-control-prev" href="#Portfolio-Carousel" role="button" data-slide="prev">
             <i style="font-size: 32px;" class="fa fa-angle-left"></i>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#Portfolio-Carousel" role="button" data-slide="next">
             <i style="font-size: 32px;" class="fa fa-angle-right"></i>
             <span class="sr-only">Next</span>
           </a>
         </div>
       </div>
 
-      <div class="modal-footer">
+      <!-- <div class="modal-footer">
+      <div class="pt-1"> -->
+
          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>  -->
-      </div>
+      <!-- </div> -->
+
+
     </div>
   </div>
 </div>
@@ -178,16 +213,17 @@
 <!-- Bootstrap Core Javascript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 <script src="https://use.fontawesome.com/4f1490b653.js"></script>
 
 <script>
 function switchStyle() {
   if (document.getElementById('styleSwitch').checked) {
     document.getElementById('gallery').classList.add("custom");
-    document.getElementById('exampleModal').classList.add("custom");
+    document.getElementById('portfolioModal').classList.add("custom");
   } else {
     document.getElementById('gallery').classList.remove("custom");
-    document.getElementById('exampleModal').classList.remove("custom");
+    document.getElementById('portfolioModal').classList.remove("custom");
   }
 }
 </script> 
